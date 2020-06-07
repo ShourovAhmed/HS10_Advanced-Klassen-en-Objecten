@@ -6,15 +6,20 @@ namespace Meetlat
 {
     class Meetlat
     {
+
+        public Meetlat(double lengtestart)
+        {
+            lengteInM = lengtestart;
+        }
+
         private double lengte;
         public double BeginLengte
         {
             set { lengte = value; }
         }
-        public double LengteInM
-        {
-            get { return lengte; }
-        }
+
+        private double lengteInM;
+
         public double LengteInCm
         {
             get { return (lengte * 100.0); }
