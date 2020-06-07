@@ -2,10 +2,32 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pokémon_Tester
+namespace Pokémon
 {
     class Pokémon
     {
+        //CONSTRUCTORS
+
+        //Default contstructor
+        public Pokémon()
+        {
+            HP_Base = 10;
+            Attack_Base = 10;
+            Defense_Base = 10;
+            SpecialAttack_Base = 10;
+            SpecialDefense_Base = 10;
+            Speed_Base = 10;
+        }
+
+        public Pokémon(int hp, int att, int def, int spAtt, int spDef, int spe)
+        {
+            HP_Base = hp;
+            Attack_Base = att;
+            Defense_Base = def;
+            SpecialAttack_Base = spAtt;
+            SpecialDefense_Base = spDef;
+            Speed_Base = spe;
+        }
 
         //BASE STATS
 
