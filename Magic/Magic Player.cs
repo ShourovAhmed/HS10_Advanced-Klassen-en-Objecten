@@ -103,7 +103,18 @@ namespace Magic
             Console.WriteLine("Mulligan?: " + DidMulligan);
         }
 
-
+        // static methods
+        static void SimuleerSpeler(Magic_Player testspeler)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                testspeler.Attack();
+            }
+            for (int i = 0; i < 3; i++)
+            {
+                testspeler.CreatureSpawn();
+            }
+        }
 
     }
 }
