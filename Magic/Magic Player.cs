@@ -116,5 +116,36 @@ namespace Magic
             }
         }
 
+        static void SimuleerWedstrijd(Magic_Player speler1, Magic_Player speler2)
+        {
+            Random r = new Random();
+
+            if (r.Next(0,11) < 5)
+            {
+                Console.WriteLine($"{speler1.name} wint!");
+            }
+            else
+            {
+                Console.WriteLine($"{speler2.name} wint!");
+            }
+        }
+
+        static Magic_Player BesteSpeler(Magic_Player speler1, Magic_Player speler2)
+        {
+            Random r = new Random();
+
+            if (r.Next(0, 11) < 5)
+            {
+                Console.WriteLine($"{speler1.name} is de beste!");
+                return speler1;
+            }
+            else
+            {
+                Console.WriteLine($"{speler2.name} is de beste!");
+                return speler2;
+            }
+        }
+    }
+    
     }
 }

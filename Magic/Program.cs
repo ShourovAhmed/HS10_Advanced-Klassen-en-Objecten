@@ -11,6 +11,7 @@ namespace Magic
             Magic_Player m2 = new Magic_Player();
 
             
+            
         }
     }
 }
